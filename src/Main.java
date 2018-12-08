@@ -9,12 +9,12 @@ import challenges.*;
 public class Main {
 
   // The relative location of the files.
-  private static final String fileName = "advent08a";
+  private static final String fileName = "advent07a";
   private static final String inputFile = "inputs\\" + fileName;
   private static final String outputFile = "outputs\\" + fileName;
 
   // The challenge object to use to run this challenge.
-  private static final IChallenge challenge = new Challenge08a();
+  private static final IChallenge challenge = new Challenge07a();
 
   /**
    * Reads the inputs from the specified location, translates them, and outputs them.

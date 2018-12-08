@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javafx.util.Pair;
 
-public class Challenge08a implements IChallenge {
+public class Challenge08b implements IChallenge {
 
   @Override
   public String[] translate(String[] input) {
@@ -14,15 +14,9 @@ public class Challenge08a implements IChallenge {
       numLine.add(Integer.valueOf(s));
     }
     List<Node> nodes = new ArrayList<>();
-    addNodes(nodes, numLine, 0);
+    Node n = addNodes(nodes, numLine, 0).getValue();
 
-    int total = 0;
-    for (Node n : nodes) {
-      for (Integer i : n.entries) {
-        total += i;
-      }
-    }
-    String[] ret = {String.valueOf(total)};
+    String[] ret = {String.valueOf(n.getValue())};
     return ret;
   }
 
